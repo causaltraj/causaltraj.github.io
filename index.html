@@ -62,7 +62,7 @@
   <meta name="citation_title" content="Coherent Multi-Agent Trajectory Forecasting in Team Sports with CausalTraj">
   <meta name="citation_author" content="Teoh, Wei Zhen">
   <meta name="citation_publication_date" content="2025">
-  <meta name="citation_arxiv_url" content="">
+  <meta name="citation_arxiv_url" content="https://arxiv.org/abs/2511.18248">
 
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -233,16 +233,15 @@ Evaluated on the NBA SportVU, Basketball-U, and Football-U datasets, CausalTraj 
                     </a>
                   </span>
 
-                  <!-- TODO: Update with your arXiv paper ID
                   <span class="link-block">
-                    <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    <a href="https://arxiv.org/abs/2511.18248" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="ai ai-arxiv"></i>
                       </span>
                       <span>arXiv</span>
                     </a>
-                  </span> -->
+                  </span>
                 </div>
               </div>
             </div>
@@ -284,25 +283,25 @@ Evaluated on the NBA SportVU, Basketball-U, and Football-U datasets, CausalTraj 
                 and other
                 domains involving complex group dynamics. Accurate prediction enables realistic simulation and strategic
                 understanding
-                of gameplay evolution. Most existing models rely on per-agent accuracy metrics (<i>minADE</i> and
-                <i>minFDE</i>),
-                which assess the best-of-k trajectory for each agent independently. These metrics overlook
-                whether the model
-                captures which predicted trajectories can jointly form a plausible multi-agent future. In team sports,
-                where outcomes
-                depend on coordinated player evolution, joint trajectory modeling remains underexplored in both modeling
-                and evaluation.
-                We propose CausalTraj, a temporally causal, likelihood-based framework that models spatial interactions
-                among agents to
-                generate joint multi-agent trajectory forecasts.
-                To better assess collective modeling capability, we emphasize scenario-level metrics (<i>minJADE</i>,
-                <i>minJFDE</i>) that measure joint accuracy across agents and better reflect a model’s ability to
-                produce consistent
-                multi-agent outcomes.
-                Evaluated on the NBA SportVU, Basketball-U, and Football-U datasets, CausalTraj achieves competitive
-                per-agent accuracy
-                and the best recorded results on joint metrics, while yielding qualitatively coherent and realistic
-                gameplay evolutions.
+                of gameplay evolution. Most existing models are evaluated solely on per-agent accuracy metrics (minADE,
+                minFDE), which
+                assess each agent independently on its best-of-k prediction. However these metrics overlook whether the
+                model learns
+                which predicted trajectories can jointly form a plausible multi-agent future. Many state-of-the-art
+                models are designed
+                and optimized primarily based on these metrics. As a result, they may underperform on joint predictions
+                and also fail to
+                generate coherent, interpretable multi-agent scenarios in team sports. We propose CausalTraj, a
+                temporally causal,
+                likelihood-based model that is built to generate jointly probable multi-agent trajectory forecasts. To
+                better assess
+                collective modeling capability, we emphasize joint metrics (minJADE, minJFDE) that measure joint
+                accuracy across agents
+                within the best generated scenario sample. Evaluated on the NBA SportVU, Basketball-U, and Football-U
+                datasets,
+                CausalTraj achieves competitive per-agent accuracy and the best recorded results on joint metrics, while
+                yielding
+                qualitatively coherent and realistic gameplay evolutions.
               </p>
             </div>
           </div>
@@ -311,40 +310,46 @@ Evaluated on the NBA SportVU, Basketball-U, and Football-U datasets, CausalTraj 
     </section>
     <!-- End paper abstract -->
 
-    <!-- Image carousel -->
     <section class="hero is-small">
       <div class="hero-body">
-        <div class="container">
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item">
-              <!-- TODO: Replace with your research result images -->
-              <img src="static/images/compare_tracks.jpg" alt="minJADE Scenario Sample Comparison" loading="lazy" />
-              <!-- TODO: Replace with description of this result -->
-              <h2 class="subtitle has-text-centered">
-                minJADE Scenario Sample Comparison on NBA SportVU dataset.
-              </h2>
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/performance1.jpg" alt="Quantitative benchmark on NBA SportVU dataset"
-                loading="lazy" />
-              <h2 class="subtitle has-text-centered">
-                Quantitative benchmark on NBA SportVU dataset.
-              </h2>
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/performance2.jpg"
-                alt="Quantitative benchmark on Basketball-U and Football-U datasets" loading="lazy" />
-              <h2 class="subtitle has-text-centered">
-                Quantitative benchmark on Basketball-U and Football-U datasets.
-              </h2>
-            </div>
-          </div>
+        <div class="container has-text-centered">
+
+          <h1 class="title is-3">Quantitative Benchmark</h1>
+
+
+          <img src="static/images/performance1.jpg" alt="Quantitative benchmark on NBA SportVU dataset"
+            loading="lazy" />
+          <h2 class="subtitle">
+            Quantitative benchmark on NBA SportVU dataset.
+          </h2>
+
+          <br />
+
+          <img src="static/images/performance2.jpg" alt="Quantitative benchmark on Basketball-U and Football-U datasets"
+            loading="lazy" />
+          <h2 class="subtitle">
+            Quantitative benchmark on Basketball-U and Football-U datasets.
+          </h2>
+
         </div>
       </div>
     </section>
-    <!-- End image carousel -->
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+
+          <h1 class="title is-3">Best Scenario Sample Comparison</h1>
+
+          <img src="static/images/compare_tracks.jpg" alt="minJADE Scenario Sample Comparison" loading="lazy" />
+
+          <h2 class="subtitle">
+            minJADE Scenario Sample Comparison on NBA SportVU dataset.
+          </h2>
+
+        </div>
+      </div>
+    </section>
 
 
     <!-- Sample Videos Comparison Section -->
@@ -360,7 +365,7 @@ Evaluated on the NBA SportVU, Basketball-U, and Football-U datasets, CausalTraj 
           <div class="columns is-vcentered">
             <!-- Model A -->
             <div class="column has-text-centered">
-              <h5 class="title is-5">MoFlow (Joint Objective)</h5>
+              <h5 class="title is-5">MoFlow (joint objective)</h5>
               <div class="video-stack">
                 <video controls preload="metadata" width="100%">
                   <source src="static/videos/sample_moflowjoint_0_0.mp4" type="video/mp4">
@@ -414,7 +419,7 @@ Evaluated on the NBA SportVU, Basketball-U, and Football-U datasets, CausalTraj 
           <div class="columns is-vcentered">
             <!-- Model A -->
             <div class="column has-text-centered">
-              <h5 class="title is-5">MoFlow (Joint Objective)</h5>
+              <h5 class="title is-5">MoFlow (joint objective)</h5>
               <div class="video-stack">
                 <video controls preload="metadata" width="100%">
                   <source src="static/videos/sample_moflowjoint_1_0.mp4" type="video/mp4">
@@ -468,7 +473,7 @@ Evaluated on the NBA SportVU, Basketball-U, and Football-U datasets, CausalTraj 
           <div class="columns is-vcentered">
             <!-- Model A -->
             <div class="column has-text-centered">
-              <h5 class="title is-5">MoFlow (Joint Objective)</h5>
+              <h5 class="title is-5">MoFlow (joint objective)</h5>
               <div class="video-stack">
                 <video controls preload="metadata" width="100%">
                   <source src="static/videos/sample_moflowjoint_2_0.mp4" type="video/mp4">
@@ -522,7 +527,7 @@ Evaluated on the NBA SportVU, Basketball-U, and Football-U datasets, CausalTraj 
           <div class="columns is-vcentered">
             <!-- Model A -->
             <div class="column has-text-centered">
-              <h5 class="title is-5">MoFlow (Joint Objective)</h5>
+              <h5 class="title is-5">MoFlow (joint objective)</h5>
               <div class="video-stack">
                 <video controls preload="metadata" width="100%">
                   <source src="static/videos/sample_moflowjoint_3_0.mp4" type="video/mp4">
@@ -574,6 +579,23 @@ Evaluated on the NBA SportVU, Basketball-U, and Football-U datasets, CausalTraj 
       </div>
     </section>
     <!-- End of Sample Videos Comparison Section -->
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">BibTeX Citation</h2>
+        <div class="content has-text-justified">
+          <pre><code id="bibtex-code">@misc{teoh2025coherentmultiagenttrajectoryforecasting,
+          title={Coherent Multi-Agent Trajectory Forecasting in Team Sports with CausalTraj},
+          author={Wei Zhen Teoh},
+          year={2025},
+          eprint={2511.18248},
+          archivePrefix={arXiv},
+          primaryClass={cs.LG},
+          url={https://arxiv.org/abs/2511.18248},
+          }</code></pre>
+        </div>
+      </div>
+    </section>
 
 
     <footer class="footer">
