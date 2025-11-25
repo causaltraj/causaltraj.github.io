@@ -10,8 +10,8 @@
   <meta name="title" content="Coherent Multi-Agent Trajectory Forecasting in Team Sports with CausalTraj">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description"
-    content="CausalTraj is a causal likelihood-based framework that generates joint multi-agent trajectory forecasts. 
-    Evaluated on multiple team sports datasets, CausalTraj achieves the best recorded results on joint trajectory accuracy metrics, yielding qualitatively coherent gameplay evolutions.">
+    content="CausalTraj is a causal likelihood-based model that generates joint multi-agent trajectory forecasts. 
+    Evaluated on multiple team sports datasets, CausalTraj achieves the best recorded results on joint trajectory accuracy metrics, while yielding qualitatively coherent gameplay evolutions.">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
   <meta name="keywords" content="trajectory forecasting, sports analytics, machine learning, computer vision, AI">
   <!-- TODO: List all authors -->
@@ -27,8 +27,8 @@
   <meta property="og:title" content="Coherent Multi-Agent Trajectory Forecasting in Team Sports with CausalTraj">
   <!-- TODO: Same as description above -->
   <meta property="og:description"
-    content="CausalTraj is a causal likelihood-based framework that generates joint multi-agent trajectory forecasts. 
-    Evaluated on multiple team sports datasets, CausalTraj achieves the best recorded results on joint trajectory accuracy metrics, yielding qualitatively coherent gameplay evolutions.">
+    content="CausalTraj is a causal likelihood-based model that generates joint multi-agent trajectory forecasts. 
+    Evaluated on multiple team sports datasets, CausalTraj achieves the best recorded results on joint trajectory accuracy metrics, while yielding qualitatively coherent gameplay evolutions.">
   <!-- TODO: Replace with your actual website URL -->
   <meta property="og:url" content="https://causaltraj.github.io">
   <!-- TODO: Create a 1200x630px preview image and update path -->
@@ -52,8 +52,8 @@
   <meta name="twitter:title" content="Coherent Multi-Agent Trajectory Forecasting in Team Sports with CausalTraj">
   <!-- TODO: Same as description above -->
   <meta name="twitter:description"
-    content="CausalTraj is a causal likelihood-based framework that generates joint multi-agent trajectory forecasts. 
-    Evaluated on multiple team sports datasets, CausalTraj achieves the best recorded results on joint trajectory accuracy metrics, yielding qualitatively coherent gameplay evolutions.">
+    content="CausalTraj is a causal likelihood-based model that generates joint multi-agent trajectory forecasts. 
+    Evaluated on multiple team sports datasets, CausalTraj achieves the best recorded results on joint trajectory accuracy metrics, while yielding qualitatively coherent gameplay evolutions.">
   <!-- TODO: Same as social preview image above -->
   <meta name="twitter:image" content="https://causaltraj.github.io/static/images/headimage.jpg">
   <meta name="twitter:image:alt" content="CausalTraj">
@@ -123,8 +123,8 @@
   "@context": "https://schema.org",
   "@type": "ScholarlyArticle",
   "headline": "Coherent Multi-Agent Trajectory Forecasting in Team Sports with CausalTraj",
-  "description": "CausalTraj is a causal likelihood-based framework that generates joint multi-agent trajectory forecasts. 
-    Evaluated on multiple team sports datasets, CausalTraj achieves the best recorded results on joint trajectory accuracy metrics, yielding qualitatively coherent gameplay evolutions.",
+  "description": "CausalTraj is a causal likelihood-based model that generates joint multi-agent trajectory forecasts. 
+    Evaluated on multiple team sports datasets, CausalTraj achieves the best recorded results on joint trajectory accuracy metrics, while yielding qualitatively coherent gameplay evolutions.",
   "author": [
     {
       "@type": "Person",
@@ -153,9 +153,7 @@
     "https://arxiv.org/abs/2501.XXXX"
   ],
   "mainEntityOfPage": "https://causaltraj.github.io",
-  "abstract": "Jointly forecasting trajectories of multiple interacting agents is a core challenge in sports analytics and other domains involving complex group dynamics. Accurate prediction enables realistic simulation and strategic understanding of gameplay evolution. Most existing models rely on per-agent accuracy metrics (\textit{minADE} and \textit{minFDE}), which assess the best-of-\textit{k} trajectory for each agent independently. These metrics overlook whether the model captures which predicted trajectories can jointly form a plausible multi-agent future. In team sports, where outcomes depend on coordinated player evolution, joint trajectory modeling remains underexplored in both modeling and evaluation. We propose CausalTraj, a temporally causal, likelihood-based framework that models spatial interactions among agents to generate joint multi-agent trajectory forecasts.
-To better assess collective modeling capability, we emphasize scenario-level metrics (\textit{minJADE}, \textit{minJFDE}) that measure joint accuracy across agents and better reflect a model’s ability to produce consistent multi-agent outcomes.
-Evaluated on the NBA SportVU, Basketball-U, and Football-U datasets, CausalTraj achieves competitive per-agent accuracy and the best recorded results on joint metrics, while yielding qualitatively coherent and realistic gameplay evolutions.",
+  "abstract": "Jointly forecasting trajectories of multiple interacting agents is a core challenge in sports analytics and other domains involving complex group dynamics. Accurate prediction enables realistic simulation and strategic understanding of gameplay evolution. Most existing models are evaluated solely on per-agent accuracy metrics (minADE, minFDE), which assess each agent independently on its best-of-k prediction. However these metrics overlook whether the model learns which predicted trajectories can jointly form a plausible multi-agent future. Many state-of-the-art models are designed and optimized primarily based on these metrics. As a result, they may underperform on joint predictions and also fail to generate coherent, interpretable multi-agent scenarios in team sports. We propose CausalTraj, a temporally causal, likelihood-based model that is built to generate jointly probable multi-agent trajectory forecasts. To better assess collective modeling capability, we emphasize joint metrics (minJADE, minJFDE) that measure joint accuracy across agents within the best generated scenario sample. Evaluated on the NBA SportVU, Basketball-U, and Football-U datasets, CausalTraj achieves competitive per-agent accuracy and the best recorded results on joint metrics, while yielding qualitatively coherent and realistic gameplay evolutions.",
   "publisher": {
     "@type": "Organization",
     "name": "arXiv"
